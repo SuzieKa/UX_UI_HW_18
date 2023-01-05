@@ -4,56 +4,139 @@
 <head>
     <title>
         Suzie Karamitros UX UI Designer
-    </title> 
+    </title>
+   <link rel="stylesheet" href="suzie.css">
 </head>
 
 <body>
+
     <nav>
-        <img src="Images/suziek-logo-2022-black.svg" alt="Suzie K Logo">
-        <ul>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>  
-                <a href="services.html">SERVICES</a>  
-                <a href="about.html">ABOUT</a>
-                <a href="blog.html">BLOG</a>
-                <a href="shop.html">SHOP</a>
-                <a href="contact.html">CONTACT</a>
-            </ul>
-                <img src="Images/social-icon-linkedin-2.svg" alt="LinkedIn Icon">
-                <img src="Images/social-icon-instagram-2.svg" alt="Instagram Icon">      
+    <section id="nav-container">
+        <div id="logo-nav">
+        <img 
+        src="Images/suziek-logo-2022-black.svg" 
+        alt="Suzie K Logo Black"
+        class="suzieklogoblk"
+        >
+        </div>  
+        
+        <div id="menu">
+         <h4>
+            <a href="portfolio.html">PORTFOLIO</a></li>  
+            <a href="services.html">SERVICES</a>  
+            <a href="about.html">ABOUT</a>
+            <a href="blog.html">BLOG</a>
+            <a href="shop.html">SHOP</a>
+            <a href="contact.html">CONTACT</a>
+            </h4>
+        </div>
+
+        <div class="social-icons-nav">
+                <img src="Images/social-icon-linkedin-2.svg" 
+                alt="LinkedIn Icon"
+                class="social-icon-linkedin-2" 
+                >
+                <img src="Images/social-icon-instagram-2.svg" 
+                alt="Instagram Icon"
+                class="social-icon-instagram-2"
+                > 
+        </div>
+    </section>  
     </nav>
 
     <main>
-        
+      
         <section>
+            <div id="header">
             <h1>Human-centered designer</h1>
              <p>19 years of working experience, Suzie Karamitros has strong design skills in producing user focused solutions to
         meet clients' goals.</p>
-            <img src="Images/suzie-karamitros-work-ato-ui-design-top-2.png" alt="Suzie Karamitros Work ATO UI Design">    
+            <img src="Images/suzie-karamitros-work-ato-ui-design-top-2.png" 
+            alt="Suzie Karamitros Work ATO UI Design"
+            class="ato-ui-top" 
+            >  
+            </div>
         </section>
         
         <section>
             <h2>Ocum nonderc factorum tasdam</h2>
-            <p>Text to be updated - Suzie has designed for leading Australian firms, including CPB Contractors, John Holland,
-        UGL, Multiplex, and Spotless Group. As well as universities: Monash, QUT, La Trobe, and the University of
-        Melbourne.</p>
+            <p>Text to be updated – Suzie has designed for leading Australian firms, including 
+                <span class="bold">CPB Contractors</span>, 
+                <span class="bold">John Holland</span>,
+                <span class="bold">UGL</span>, 
+                <span class="bold">Multiplex</span>, 
+                and <span class="bold">Spotless Group</span>. 
+                As well as universities: <span class="bold">Monash</span>, 
+                <span class="bold">QUT</span>, <span class="bold">La Trobe</span>, 
+                and the <span class="bold">University of Melbourne</span>.</p>
+        </section>
+               
+        <section id="logo-table">
+            <table>
+            <tr>
+                <td><img src="Images/logo-cpb.jpg"</td>
+                <td><Img src="Images/logo-jh.jpg"</td>
+                <td><Img src="Images/logo-wgtp.jpg"</td>
+                <td><Img src="Images/logo-nwpa.jpg"</td>
+                <td><Img src="Images/logo-ugl.jpg"</td>
+                <td><Img src="Images/logo-multiplex.jpg"</td>
+                <td><Img src="Images/logo-spotless.jpg"</td>
+                <td><Img src="Images/logo-epicure.jpg"</td>
+            </tr>
+            <tr>
+                <td><img src="Images/logo-university-of-melbourne.jpg"</td>
+                <td><Img src="Images/logo-monash-university.jpg"</td>
+                <td><Img src="Images/logo-qut.jpg"</td>
+                <td><Img src="Images/logo-bu.jpg"</td>
+                <td><Img src="Images/logo-mz.jpg"</td>
+                <td><Img src="Images/logo-ng.jpg"</td>
+                <td><Img src="Images/logo-gf.jpg"</td>
+                <td><Img src="Images/logo-ib.jpg"</td>
+                </tr>
+        </table>
         </section>
 
-    <section>
+    <section-mywork>
     <h2>My work</h2>
 
+    <div>
+    <img src="Images/suzie-karamitros-work-save-a-pet-mobile.jpg" 
+    alt="Save A Pet Mobile UI Design"
+    class="save-a-pet"
+    >
     <h5>UX, UI, Branding</h5>
     <h3>Save a Pet</h3>
+    </div>
 
+    <div>
+    <img src="Images/suzie-karamitros-work-travel-app-user-scenario-2.jpg" 
+    alt="Travel App UI Design"
+    class="travel-app">
     <h5>UX, User Journey Map</h5>
     <h3>Travel App</h3>
+    </div>
 
+    <div>
+    <img src="Images/suzie-karamitros-work-ato-ui-style tile.png" 
+    alt="ATO UI Design"
+    class="ato-ui">
     <h5>UI Style Guide</h5>
     <h3>ATO website redesign</h3>
+    </div>
 
+    <img src="Images/suzie-karamitros-ui-arc-ctet.jpg" 
+    alt="ARC CTET UI Design"
+    class="arc">
     <h5>UI, Logo Design, Branding</h5>
     <h3>ARC CTET Training Centre for Cell & Tissue Engineering Technologies
         Monash University and Queensland University of Technology (QUT)</h3>
-    </section>
+
+    <button 
+        id="b-red"><h5><span class="white">PORTFOLIO</h5></span> 
+        <img src="Images/icon-sk-arrow-white.svg">
+    </button>
+
+    </section-mywork>
 
     <section>
     <h2>My UX Skills</h2>
@@ -62,15 +145,36 @@
         She is skilled in developing concepts, user flows, wireframes, and wire flows 
         through to implementing design systems with Development leads to ensure a seamless delivery. 
         Along with experience in planning, developing and facilitating user research and testing.</p>
+        <div>
+        <button>
+            <h5>LEARN MORE</h5><img src="Images/icon-sk-arrow.svg">
+        </button>
+        <img src="Images/Placeholder Photo.png" alt="Placeholder Photo">
+        </div> 
+
     </section>
 
     </main>
 </body>
 
 <footer>
-    <a href="mailto:info@suziek.com.au">info@suziek.com.au</a>
-    <h5>Privacy Statement</h5>
-    <h5>© Copyright 2023</h5>
+    <form action="/info@suziek.com.au">
+
+    <h3><span class="white">Monthly Newsletter</span></h3>
+        <p>
+            <input type="name" placeholder="Name" name="Name">
+        </p>
+        <p><input type="email" placeholder="Email" email="Email"></p>
+        <button><img src="Images/icon-arrow-thin-white.svg"></button> 
+    </form>
+
+    <h4><a href="mailto:info@suziek.com.au"><span class="white">info@suziek.com.au</span></a></h4>
+    <img src="Images/social-icon-linkedin-2-white.svg" alt="LinkedIn Icon White">
+    <img src="Images/social-icon-instagram-2-white.svg" alt="Instagram Icon White">
+    <p><span class="white">Privacy Statement</span></p>
+    <p><span class="white">© Copyright 2023</span></p>
+    <img src="Images/suziek-logo-2022-white.svg" alt="Suzie K Logo White">
+
 </footer>
 
 </html>
