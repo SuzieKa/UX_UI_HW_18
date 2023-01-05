@@ -3,14 +3,14 @@
   }*/
 
 
-h1 {
-    text-align: left;
-    font-family: Poppins, Futura;
+/*––––––FONT STYLES––––––*/
+
+h1 {font-family: Poppins, Futura;
     font-weight: 600;
     font-size: 48px;
+    line-height: 52px;
     color: black;
 }
-
 
 h2 {font-family: Poppins, Futura;
     font-weight: 600;
@@ -53,71 +53,118 @@ p {font-family: Source Sans Pro, Futura;
 }
 
 
+/*––––––MEDIA QUERIES––––––*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    h1 {font-size: 30px;}
+    
+    menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main {flex-direction: column; align-items: center;}
+
+    footer {flex-direction: column;
+    align-items: center;}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
 a {
     text-decoration: none;
     color: black;
 }
 
 
+/*––––––NAV––––––*/
 
 nav {background-color: #FDF8F3; 
 }
 
 #nav-container {
     background-color: #FDF8F3; 
-    width:
     height: 100px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
-}
-
-#nav-container div {
-    margin: 5px;
 }
 
 .suzieklogoblk {
     width: 163px;
     height: 22px;
+    padding: 5px 10px 10px 150px;
   }
 
-#menu div {
-    margin: 40px;
+.menu {
+    padding: 100px;
 }
 
 .social-icon-linkedin-2 {
     width: 18px;
     height: 18px;
-    margin: 7px;
+    padding: 5px 5px 5px 5px;
 
 }
 
 .social-icon-instagram-2 {
     width: 18px;
     height: 18px;
-    margin: 5px;
+    padding: 5px 150px 5px 5px;
 }
 
+/*––––––HEADER––––––*/
 
+#header-container {
+    background-color: #FDF8F3; 
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#header {
+    margin: 0px 50px 0px 150px;
+}
 
 .ato-ui-top {
     width: 945px;
     height: 702px; 
-    display: inline-block;
+    padding: 0px 150px 0px 0px;
+    display: flex;
 }
+
+/*––––––EXPERIENCE––––––*/
 
 #logo-table {display: flex;
     flex-direction: row;
-    flex-shrink: 2;
 }
 
-tr {display: flex; flex-shrink: 2;
+tr {display: flex;
 
 }
+
+td img {margin: 1px; border-radius: 5px; width: 173px; height: 173px;}
+
+
+/*––––––MY WORK––––––*/
 
 section-mywork {background-color: #FDF8F3;}
 
@@ -149,6 +196,8 @@ section-mywork {background-color: #FDF8F3;}
     display: inline-block;
 }
 
+/*––––––CLASSES––––––*/
+
 .bold {font-weight: 700;}
 
 .white {color: white;}
@@ -156,16 +205,52 @@ section-mywork {background-color: #FDF8F3;}
 input[type="name"]{font-family: Poppins, Futura;}
 input[type="email"]{font-family: Poppins, Futura;}
 
+
+/*––––––BUTTONS––––––*/
+
 button:hover {color:#8C0D57;}
 button:active {color:#FF5EBA;}
 
 #learn more button:hover{color:#8C0D57;}
 button:active {color:#FF5EBA;}
 
-
-td img {margin: 1px; border-radius: 5px; width: 173px; height: 173px;}
-
 #b-red {background-color: #FF5959; padding: 5px 10px;}
 
 
+/*––––––FOOTER––––––*/
+
 footer {background-color: #8C0D57;}
+
+#footer-container {
+    background-color: #8C0D57; 
+    height: 300px;
+    margin: 150px 100px 100px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-wht-submit {
+    width: 32px;
+    height: 20px;
+}
+
+.social-icon-linkedin-wht {
+    width: 18px;
+    height: 18px;
+    margin: 7px
+
+}
+
+.social-icon-instagram-wht {
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+    justify-content: space-evenly;
+}
+
+.suzieklogobwht {
+    width: 163px;
+    height: 22px;
+  }
