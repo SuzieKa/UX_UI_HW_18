@@ -153,8 +153,19 @@ nav {background-color: #FDF8F3;
 
 /*––––––EXPERIENCE––––––*/
 
-#logo-table {display: flex;
-    flex-direction: row;
+
+#experience-container {
+    padding: 50px 150px 50px 150px;
+    text-align: center;
+    align-items: center;
+    width: 800px;
+
+}
+
+#logo-table {
+    display: flex;
+    align-items: center;
+    padding: 50px 150px 50px 150px;
 }
 
 tr {display: flex;
@@ -166,7 +177,11 @@ td img {margin: 1px; border-radius: 5px; width: 173px; height: 173px;}
 
 /*––––––MY WORK––––––*/
 
-section-mywork {background-color: #FDF8F3;}
+#mywork {
+    background-color: #FDF8F3;
+    height:auto;
+    padding: 50px 150px 50px 150px;
+}
 
 .save-a-pet {
     width: 592px;
